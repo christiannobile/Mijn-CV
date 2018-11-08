@@ -1,42 +1,31 @@
 .introline_text1, .introline_text4, .introline_text5, .introline_text8, .introline_text9 {
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 70px;
-    animation-direction: alternate;
-    animation-duration: 5s;
-    animation-name: slide1;
-    animation-timing-function: linear;
-    display: inline-block
-    
-}
-
-.introline_text2, .introline_text3, .introline_text6, .introline_text7{
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 70px;
-    animation-direction: alternate;
-    animation-duration: 5s;
-    animation-name: slide2;
-    animation-timing-function: linear;
-    display: inline-block
-}
-
-@keyframes slide1{
-    from {
-     left: 100%;
-    }
-  
-    to {
-      right: 0%;
-    }
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5em;
+  top: 2em;
+  animation-name: centerToLeft;
+  animation-duration: 10s;  
+  animation-iteration-count: 1;
   }
 
-  @keyframes slide2{
-    from {
-      right: 0%;
-    }
-  
-    to {
-      left: 0%;
-    }
-  }
+.introline_text2, .introline_text3, .introline_text6, .introline_text7 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5em;
+  top: 2em;
+  animation-name: centerToRight;
+  animation-duration: 10s;
+  animation-iteration-count: 1;  
+}
+
+@keyframes centerToLeft {
+  0% {text-align: center;}
+  100% {text-align: left;}
+}
+
+@keyframes centerToRight {
+	0% {text-align: center;}
+  100% {text-align: right;}
+}
