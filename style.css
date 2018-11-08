@@ -1,42 +1,37 @@
-.introline_text1, .introline_text4, .introline_text5, .introline_text8, .introline_text9 {
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 70px;
-    animation-direction: alternate;
-    animation-duration: 5s;
-    animation-name: slide1;
-    animation-timing-function: linear;
-    display: inline-block
-    
+body {
+  background-color: rgb(0,0,0);
+}
+.container {
+  display: grid inline-grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: auto;
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
 }
 
-.introline_text2, .introline_text3, .introline_text6, .introline_text7{
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 70px;
-    animation-direction: alternate;
-    animation-duration: 5s;
-    animation-name: slide2;
-    animation-timing-function: linear;
-    display: inline-block
+.intro {
+  text-align: center;
+  width: 100%;
 }
 
-@keyframes slide1{
-    from {
-     left: 100%;
-    }
-  
-    to {
-      right: 0%;
-    }
-  }
+ul, p{
+list-style-type: none; 
+font-size: 1em;
+}
 
-  @keyframes slide2{
-    from {
-      right: 0%;
-    }
-  
-    to {
-      left: 0%;
-    }
-  }
+.SmallColumn {
+  width: 30%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.LargeColumn {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
