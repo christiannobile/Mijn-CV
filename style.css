@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 60%;
   height: auto;
   margin: 0 auto;
 }
@@ -16,6 +16,7 @@ body {
 
 ul {
     list-style-type: none;
+    display: inline-block;
 }
 
 .intro {
@@ -29,6 +30,13 @@ ul {
   border: 1px solid black;
   grid-column: 1 / 4;
   grid-row: 2;
+  margin: 0px;
+}
+
+.personalia {
+  border: 1px solid black;
+  grid-column: 1 / 4;
+  grid-row: 3;
   margin: 0px;
 }
 
