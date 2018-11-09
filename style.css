@@ -1,31 +1,128 @@
-.introline_text1, .introline_text4, .introline_text5, .introline_text8, .introline_text9 {
-  text-align: center;
-  color: rgb(0, 0, 0);
+body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 5em;
-  top: 2em;
-  animation-name: centerToLeft;
-  animation-duration: 10s;  
-  animation-iteration-count: 1;
-  }
-
-.introline_text2, .introline_text3, .introline_text6, .introline_text7 {
-  text-align: center;
-  color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 5em;
-  top: 2em;
-  animation-name: centerToRight;
-  animation-duration: 10s;
-  animation-iteration-count: 1;  
 }
 
-@keyframes centerToLeft {
-  0% {text-align: center;}
-  100% {text-align: left;}
+.container {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
 }
 
-@keyframes centerToRight {
-	0% {text-align: center;}
-  100% {text-align: right;}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.intro {
+  text-align: center;
+  border: 1px solid black;
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+
+.personaliaTitle {
+  border: 1px solid black;
+  grid-column: 1 / 4;
+  grid-row: 2;
+  margin: 0px;
+}
+
+.personaliaContentSmall {
+  border: 1px solid black;
+  grid-column: 1 / 2;
+  grid-row: 3;
+}
+
+.personaliaContentLarge {
+  border: 1px solid black;
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
+
+.educationTitle {
+  border: 1px solid black;
+  grid-column: 1 / 4;
+  grid-row: 4;
+  margin: 0px;
+}
+
+
+.educationContentSmall li {
+  border: 1px solid black;
+  grid-column: 1 / 2;
+  grid-row: 5;
+  padding-bottom: 2em;
+}
+
+.educationContentLarge {
+  border: 1px solid black;
+  grid-column: 2 / 4;
+  grid-row: 5;
+}
+
+.listContentSmall li{
+  padding-bottom: 1em;
+}
+
+.experienceTitle {
+  border: 1px solid black;
+  grid-column: 1 / 4;
+  grid-row: 6;
+  margin: 0px;
+}
+
+.experienceContentSmall {
+  grid-column: 1 / 2;
+  grid-row: 7;
+}
+
+.experienceContentLarge {
+  border: 1px solid black;
+  grid-column: 2 / 4;
+  grid-row: 7;
+}
+
+.internshipsTitle {
+  border: 1px solid black;
+  grid-column: 1 / 4;
+  grid-row: 8;
+  margin: 0px;
+}
+
+.internshipsContentSmall {
+  grid-column: 1 / 2;
+  grid-row: 9;
+}
+
+.internshipsContentLarge {
+  border: 1px solid black;
+  grid-column: 2 / 4;
+  grid-row: 9;
+}
+
+.skillsTitle {
+  border: 1px solid black;
+  grid-column: 1 / 4;
+  grid-row: 10;
+  margin: 0px;
+}
+
+.skillsContentSmall {
+  grid-column: 1 / 2;
+  grid-row: 11;
+}
+
+.skillsContentLarge {
+  border: 1px solid black;
+  grid-column: 2 / 4;
+  grid-row: 11;
+}
+
+.computerLargeList {
+  padding-left: 0 ;
 }
